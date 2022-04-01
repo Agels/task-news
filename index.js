@@ -2,7 +2,9 @@
 //5576511f5d8a4fbfa6f186306439f6e5 : kocnaj
 //dbf82ff4b52d4ee39ea3e66623f033c8 : native
 // 3964c57788ee4edcad4038d6bc318c18 : dontknow
-const api_key = "5576511f5d8a4fbfa6f186306439f6e5";
+// a876816f98574cdfa23ffdc7d531c7bc : dontknow
+
+const api_key = "a876816f98574cdfa23ffdc7d531c7bc";
 
 const showFirst = async () => {
   const res = await fetch(
@@ -24,12 +26,13 @@ const hideLoad = () => {
 
 const search = document.getElementById("search");
 search.addEventListener("keyup", async () => {
-  const wordsx = event.target.value;
+  const words = event.target.value;
   try {
     loading();
     const res = await fetch(
-      `https:newsapi.org/v2/everything?q=${wordsx}&popularity=popularity&language=id&apiKey=${api_key}`
+      `https:newsapi.org/v2/everything?q=${words}&popularity=popularity&language=id&apiKey=${api_key}`
     );
+
     const result = await res.json();
     const data = await result.articles;
     hideLoad();
@@ -62,7 +65,7 @@ const showNews = (data) => {
                <div class="card-body">
                    <h5 class="card-title">${news.title}</h5>
                    <h6 class="title">${news.author} </h6>
-                   <p class="card-text fs-6">${news.description} .... <em>read more</em></p>
+                   <p class="card-text fs-6">${news.description} ....<a href=${news.url}> <em>read more</em><a></p>
                </div>
            </div>`;
 
