@@ -1,0 +1,26 @@
+
+.card-title {
+    font-weight:bolder;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-text {
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    font-weight: 400;
+}
+
+.logo {
+    font-size:32px ;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+}
+.loading {
+    height: 240px;
+    width: 240px;
+background: url('img/loadx.gif');
+}
+
+.me-2{
+    border-radius: 30px;
+}
