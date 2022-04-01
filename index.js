@@ -3,11 +3,10 @@
 //dbf82ff4b52d4ee39ea3e66623f033c8 : native
 // 3964c57788ee4edcad4038d6bc318c18 : dontknow
 const api_key = "5576511f5d8a4fbfa6f186306439f6e5";
-const prxUrl = "https://agels.github.io/task-news/"
 
 const showFirst = async () => {
   const res = await fetch(
-    `${prxUrl}http://newsapi.org/v2/top-headlines?country=id&apiKey=${api_key}`
+    `https://newsapi.org/v2/top-headlines?country=id&apiKey=${api_key}`
   );
   const result = await res.json();
   const data = await result.articles;
@@ -29,7 +28,7 @@ search.addEventListener("keyup", async () => {
   try {
     loading();
     const res = await fetch(
-      `${prxUrl}http:newsapi.org/v2/everything?q=${wordsx}&popularity=popularity&language=id&apiKey=${api_key}`
+      `https:newsapi.org/v2/everything?q=${wordsx}&popularity=popularity&language=id&apiKey=${api_key}`
     );
     const result = await res.json();
     const data = await result.articles;
