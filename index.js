@@ -1,8 +1,8 @@
-// 171f08d6d2234a0480c7e4708d6e0eb6 : ardhianagilr
-//5576511f5d8a4fbfa6f186306439f6e5 : kocnaj
-//dbf82ff4b52d4ee39ea3e66623f033c8 : native
-// 3964c57788ee4edcad4038d6bc318c18 : dontknow
-// a876816f98574cdfa23ffdc7d531c7bc : dontknow
+// 171f08d6d2234a0480c7e4708d6e0eb6 : api 1
+//5576511f5d8a4fbfa6f186306439f6e5 : api 2
+//dbf82ff4b52d4ee39ea3e66623f033c8 : api 3
+// 3964c57788ee4edcad4038d6bc318c18 : api 4
+// a876816f98574cdfa23ffdc7d531c7bc : api 5
 
 const api_key = "a876816f98574cdfa23ffdc7d531c7bc";
 
